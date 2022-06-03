@@ -31,6 +31,7 @@ This is designed to work with Chrome >=78 on macOS (tested with macOS Monterey 1
 
 
 ## References and Further Reading
+- chrome://flags/#allow-insecure-localhost https://bugs.chromium.org/p/chromium/issues/detail?id=714287
 - StackOverflow about this issue: https://stackoverflow.com/questions/38968510/how-to-permanently-exclude-localhost-from-hsts-list-in-google-chrome
 - Chromium bug with details on why `defaults write com.google.Chrome HSTSPolicyBypassList -string "localhost"` doesn't work: https://bugs.chromium.org/p/chromium/issues/detail?id=859185
 - The *right* way to fix this by generating a cert for use with local dev servers https://scatteredcode.net/debugging-on-localhost-with-hsts
@@ -39,3 +40,4 @@ This is designed to work with Chrome >=78 on macOS (tested with macOS Monterey 1
 - Python tool to convert a plist to a Configuration Profile https://github.com/timsutton/mcxToProfile
 - Source file that [com.google.Chrome.mobileconfig](com.google.Chrome.mobileconfig) was generated from using mcxToProfile: [src/com.google.Chrome.plist](src/com.google.Chrome.plist)
 - Some background on the problem and other ways to fix this in Chrome, Firefox, and Internet Explorer: https://appuals.com/how-to-clear-or-disable-hsts-for-chrome-firefox-and-internet-explorer/
+- Chrome DevTools Protocol `Security.setIgnoreCertificateErrors` https://chromedevtools.github.io/devtools-protocol/tot/Security/#method-setIgnoreCertificateErrors
