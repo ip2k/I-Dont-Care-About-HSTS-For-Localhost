@@ -33,7 +33,7 @@ This is designed to work with Chrome >=78 on macOS (tested with macOS Monterey 1
 ## References and Further Reading
 - StackOverflow about this issue: https://stackoverflow.com/questions/38968510/how-to-permanently-exclude-localhost-from-hsts-list-in-google-chrome
 - Chromium bug with details on why `defaults write com.google.Chrome HSTSPolicyBypassList -string "localhost"` doesn't work: https://bugs.chromium.org/p/chromium/issues/detail?id=859185
-
+- The *right* way to fix this by generating a cert for use with local dev servers https://scatteredcode.net/debugging-on-localhost-with-hsts
 - Official docs on HSTSPolicyBypassList: https://chromeenterprise.google/policies/?policy=HSTSPolicyBypassList
 - Official docs on CertificateTransparencyEnforcementDisabledForUrls: https://chromeenterprise.google/policies/?policy=CertificateTransparencyEnforcementDisabledForUrls
 - Python tool to convert a plist to a Configuration Profile https://github.com/timsutton/mcxToProfile
