@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>com.google.Chrome</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<key>CertificateTransparencyEnforcementDisabledForUrls</key>
+								<array>
+									<string>localhost</string>
+								</array>
+								<key>HSTSPolicyBypassList</key>
+								<array>
+									<string>localhost</string>
+								</array>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>MCXToProfile.fc22d769-ad53-4c32-af74-48bf1ba6a5e3.alacarte.customsettings.9b72a818-20d0-4c86-a59e-db37d4baa11f</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>9b72a818-20d0-4c86-a59e-db37d4baa11f</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Included custom settings:
+com.google.Chrome
+
+Git revision: b'a0e04c60fc'</string>
+	<key>PayloadDisplayName</key>
+	<string>I Don't Care About HSTS for Localhost!</string>
+	<key>PayloadIdentifier</key>
+	<string>com.google.Chrome</string>
+	<key>PayloadOrganization</key>
+	<string></string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>fc22d769-ad53-4c32-af74-48bf1ba6a5e3</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
