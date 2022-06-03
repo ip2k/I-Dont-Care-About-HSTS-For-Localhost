@@ -5,9 +5,9 @@ Helps ease the pain of newer Chrome versions forcing HTTP Strict Transport Secur
 ## TL;DR
 
 If you're seeing this on localhost dev servers:
-![sadface.png](sadface.png?raw=true "sadface.png")
+![img/sadface.png](img/sadface.png?raw=true "img/sadface.png")
 ... and you're sick of deleting `localhost` from [chrome://net-internals/#hsts](chrome://net-internals/#hsts):
-![net-internals.png](net-internals.png?raw=true "net-internals.png")
+![img/net-internals.png](img/net-internals.png?raw=true "img/net-internals.png")
 ...install the [com.google.Chrome.mobileconfig](com.google.Chrome.mobileconfig) profile from this repo, restart Chrome, and it should work.
 
 ## Compatability
@@ -21,14 +21,13 @@ This is designed to work with Chrome >=78 on macOS (tested with macOS Monterey 1
 3. You should see a notification in the upper-right that reads `Review the profile in System Preferences if you want to install it`
 4. Navigate to  -> System Preferences -> Profiles
 5. You should see the policy called `I Don't Care About HSTS for Localhost!` in the `Downloaded` section of the Profiles preferences pane. Click `Install...` and follow the prompts to authenticate and install the profile.
-![policy.png](policy.png?raw=true "policy.png")
+![img/policy.png](img/policy.png?raw=true "img/policy.png")
 6. Quit all Google Chrome windows. One easy way to do this is to select the `Chrome` menu on the top bar and select `Quit Google Chrome`.
 7. Verify that the policies are installed: re-open Google Chrome and navigate to [chrome://policy/](chrome://policy/) 
 8. In the upper-right corner of the chrome://policy page, in the `Filter Policies by name` textbox, enter `hsts` and you should see the following:
-![hstspolicybypasslist.png](hstspolicybypasslist.png?raw=true "hstspolicybypasslist.png")
+![img/hstspolicybypasslist.png](img/hstspolicybypasslist.png?raw=true "img/hstspolicybypasslist.png")
 9. In that same `Filter Policies by name` textbox, enter `url` and you should see the following:
-![certificatetransparencyenforcementdisabledforurls.png](certificatetransparencyenforcementdisabledforurls.png?raw=true "certificatetransparencyenforcementdisabledforurls.png")
-10. 
+![img/certificatetransparencyenforcementdisabledforurls.png](img/certificatetransparencyenforcementdisabledforurls.png?raw=true "img/certificatetransparencyenforcementdisabledforurls.png")
 
 
 ## References and Further Reading
