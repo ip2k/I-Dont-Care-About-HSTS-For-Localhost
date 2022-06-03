@@ -1,0 +1,2 @@
+# I-Dont-Care-About-HSTS-For-Localhost
+Helps ease the pain of newer Chrome versions forcing HTTP Strict Transport Security for localhost, then caching via dynamic domain security policies if it ever works once, forcing HTTPS on local dev servers until "localhost" is manually reset via chrome://net-internals/#hsts every single time this happens. This installable policy for macOS fixes that via adding localhost to HSTSPolicyBypassList and CertificateTransparencyEnforcementDisabledForURLs.
